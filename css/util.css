@@ -1,0 +1,261 @@
+@charset "utf-8";
+/*
+ * CSS UTIL
+ * 常用工具类
+ * @author mizi
+ * @version 1.0.20080317
+ * @version 1.4.20140324 重新调整结合Normalize
+ */
+
+/** 清除浮动 */
+.clearfix:after {content:"\200B"; display:block; height:0; clear:both; }
+.clearfix { *zoom:1; }
+.cl { clear: left; }
+.cr { clear: right; }
+.cb { clear：both; }
+.zoom{ zoom:1; }
+
+/** 浮动 */
+.fl { float: left; }
+.fr { float: right; }
+
+/*
+ * 显示，隐藏，块级与联级转换
+ */
+.hide { display: none; } /** 隐藏，消失，实际不占位 */
+.hidden { visibility: hidden; } /** 看不见，隐形，实际占位 */
+.show, .block { display: block; } /** 显示为块级 -> hide */
+.show-il, .il { display: inline; } /** 显示为联级 -> hide */
+.show-il-b, .il-b { display: inline-block;} /** 显示为inline-block ->hide */
+.visible { visibility: visible; } /** 显示 -> hidden */
+
+/*
+ * 文字排列
+ */
+.tl { text-align: left; }
+.tr { text-align: right; }
+.tc { text-align: center; }
+.vt { vertical-align: top; }
+.vm { vertical-align: middle; }
+.vb { vertical-align: bottom; }
+.nowrap{ white-space:nowrap; }
+/*
+ * 字体样式
+ */
+.b { font-weight: 400; }
+.bb { font-weight: 500; } /** bold default */
+.bbb { font-weight: 600; }
+.bold { font-weight: bold; }
+
+/** 下划线 */
+.unln{ text-decoration: underline; }
+.unln-n {text-decoration: none; }
+
+/** 字体颜色 */
+.black { color: #000; }
+.white { color: #fff; }
+.red { color: #f00; }
+.gray { color: #ccc; }
+.remark { color: #777; }
+
+/** 字号大小 */
+.f10px { font-size: 10px; -webkit-transform: scale(0.83); -o-transform: scale(1); } 
+.f11px { font-size: 11px; -webkit-transform: scale(0.91); -o-transform: scale(1); }
+.f12px { font-size: 12px; }
+.f14px { font-size: 14px; }
+.f16px { font-size: 16px; }
+.f18px { font-size: 18px; }
+.f20px { font-size: 20px; }
+.f24px { font-size: 24px; }
+.f28px { font-size: 28px; }
+.f32px { font-size: 32px; }
+.f48px { font-size: 48px; }
+
+/*
+ * 间距
+ */
+.lh15 { line-height: 1.5; }
+.lh18 { line-height: 1.8; }
+.lh20 { line-height: 2; }
+.lh16px { line-height: 16px; }
+.lh18px { line-height: 18px; }
+.lh20px { line-height: 20px; }
+.lh22px { line-height: 22px; }
+.lh24px { line-height: 24px; }
+.lh28px { line-height: 28px; }
+.lh30px { line-height: 30px; }
+.lh32px { line-height: 32px; }
+.lh40px { line-height: 40px; }
+
+/** margin */
+.mt-1px { margin-top: -1px; }
+.mt-2px { margin-top: -2px; }
+.mt-3px { margin-top: -3px; }
+.mt0px { margin-top: 0px; }
+.mt1px { margin-top: 1px; }
+.mt2px { margin-top: 2px; }
+.mt3px { margin-top: 3px; }
+.mt5px { margin-top: 5px; }
+.mt8px { margin-top: 8px; }
+.mt10px { margin-top: 10px; }
+.mt15px { margin-top: 15px; }
+
+.ml-1px { margin-left: -1px; }
+.ml-2px { margin-left: -2px; }
+.ml-3px { margin-left: -3px; }
+.ml0px { margin-left: 0px; }
+.ml1px { margin-left: 1px; }
+.ml3px { margin-left: 3px; }
+.ml5px { margin-left: 5px; }
+.ml8px { margin-left: 8px; }
+.ml10px { margin-left: 10px; }
+.ml15px { margin-left: 15px; }
+
+.mr0px { margin-right: 0px; }
+.mr1px { margin-right: 1px; }
+.mr2px { margin-right: 2px; }
+.mr3px { margin-right: 3px; }
+.mr5px { margin-right: 5px; }
+.mr8px { margin-right: 8px; }
+.mr10px { margin-right: 10px; }
+.mr15px { margin-right: 15px; }
+
+.mb0px { margin-bottom: 0px; }
+.mb1px { margin-bottom: 1px; }
+.mb3px { margin-bottom: 3px; }
+.mb5px { margin-bottom: 5px; }
+.mb8px { margin-bottom: 8px; }
+.mb10px { margin-bottom: 10px; }
+.mb15px { margin-bottom: 15px; }
+
+.m0px { margin: 0px; }
+.m1px { margin: 1px; }
+.m3px { margin: 3px; }
+.m5px { margin: 5px; }
+.m8px { margin: 8px; }
+.m10px { margin: 10px; }
+.m15px { margin: 15px; }
+
+.mlr0px { margin-left: 0px;  margin-right: 0px; }
+.mlr1px { margin-left: 1px;  margin-right: 1px; }
+.mlr3px { margin-left: 3px;  margin-right: 3px; }
+.mlr5px { margin-left: 5px;  margin-right: 5px; }
+.mlr8px { margin-left: 8px;  margin-right: 8px; }
+.mlr10px { margin-left: 10px;  margin-right: 10px; }
+.mlr15px { margin-left: 15px;  margin-right: 15px; }
+
+/** padding 距离值 */
+.pt0px { padding-top: 0px; }
+.pt1px { padding-top: 1px; }
+.pt3px { padding-top: 3px; }
+.pt5px { padding-top: 5px; }
+.pt8px { padding-top: 8px; }
+.pt10px { padding-top: 10px; }
+.pt15px { padding-top: 15px; }
+
+.pl0px { padding-left: 0px; }
+.pl1px { padding-left: 1px; }
+.pl3px { padding-left: 3px; }
+.pl5px { padding-left: 5px; }
+.pl8px { padding-left: 8px; }
+.pl10px { padding-left: 10px; }
+.pl15px { padding-left: 15px; }
+
+.pr0px { padding-right: 0px; }
+.pr1px { padding-right: 1px; }
+.pr3px { padding-right: 3px; }
+.pr5px { padding-right: 5px; }
+.pr8px { padding-right: 8px; }
+.pr10px { padding-right: 10px; }
+.pr15px { padding-right: 15px; }
+
+.pb0px { padding-bottom: 0px; }
+.pb1px { padding-bottom: 1px; }
+.pb3px { padding-bottom: 3px; }
+.pb5px { padding-bottom: 5px; }
+.pb8px { padding-bottom: 8px; }
+.pb10px { padding-bottom: 10px; }
+.pb15px { padding-bottom: 15px; }
+
+.p0px { padding: 0px; }
+.p1px { padding: 1px; }
+.p3px { padding: 3px; }
+.p5px { padding: 5px; }
+.p8px { padding: 8px; }
+.p10px { padding: 10px; }
+.p15px { padding: 15px; }
+
+/*
+ * 常用样式类
+ */
+
+/** 习惯于ul横向显示列表，而ol纵向显示列表 */
+ul.horizotal { font-size: 0; *word-spacing: -1px;/* IE6、7 */ } 
+ul.horizontal li { 	display: inline-block; *display: inline;/* IE8 */ }
+
+/** 覆盖浏览器默认填写表单项的黄色背景，改为白色 */
+input.autofill:-webkit-autofill { 
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+/** tt 只显示数字 */
+tt { font-size: 13px; font-family: "Tahoma"; } 
+/** 高亮显示, 黄底红字 */
+mark { color: #f00; background: #ff0; } 
+
+/** 错误提醒 */
+label.error { color: #f00;}
+
+/** 按钮 */
+.btn {
+	min-width: 50px;
+	min-height: 24px;
+    line-height: 24px;
+    color: #000;
+    padding: 0;
+    border: 1px solid #ccc;  
+    background: #f0f0f0;
+	box-sizing: border-box; 
+  	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	-ms-box-sizing: border-box; 
+}
+a.btn {padding-left: 5px; padding-right: 5px; text-align: center; display: inline-block; vertical-align: top; }
+a.btn:hover {text-decoration: none; }
+.btn:hover {background: #f5f5f5; }
+.btn[disabled] { color: #595757; background: #ccc; cursor: not-allowed; }
+
+/** 遮罩mask */
+.mask {
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+	width: 100%;
+	height: 100%;
+	z-index: 9000;
+	display: none;
+	background: rgba( 255, 255, 255, .5) url('http://static.hunterdrive.com/base/images/spinner.gif') no-repeat center 35%;
+	background-size: 10%;
+}
+
+/** 默认头像显示 */
+.avatar {
+	background: #f3f3f3 url("http://static.hunterdrive.com/base/images/avatar-default.png?1222") no-repeat center center;
+	background-size: cover;
+	background-repeat: round;
+}
+
+/** 表单元素 input */
+input[type=text],
+input[type=password],
+input[type=email] { 
+	font-size: 12px;
+	line-height: 24px; 
+	height: 26px;
+	border: 1px solid #dedede; 
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	-ms-box-sizing: border-box; 
+}
+
