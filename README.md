@@ -21,4 +21,13 @@ HunterDrive FE Code Style Guideline
 * 是可预测的
 * 有一定的文档规范
 
+参考：
+* <a href="http://blog.csdn.net/kanghua/article/details/3649209">谈谈软件的可维护性问题 </a>
+
+
+细则
+===
+* reset.css
+* util.css
+
 
