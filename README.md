@@ -22,12 +22,12 @@ HunterDrive FE Code Style Guideline
 * 有一定的文档规范
 
 参考：
-* <a href="http://blog.csdn.net/kanghua/article/details/3649209">谈谈软件的可维护性问题 </a>
+* <a href="http://blog.csdn.net/kanghua/article/details/3649209" target="_blank">谈谈软件的可维护性问题 </a>
 
 
 细则
 ===
-* reset.css
-* util.css
+* <a href="https://github.com/amily4555/fe/blob/master/css/reset.css" target="_blank">reset.css</a>
+* <a href="https://github.com/amily4555/fe/blob/master/css/reset.css" target="_blank">util.css</a>
 
 
