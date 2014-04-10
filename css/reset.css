@@ -1,6 +1,7 @@
 @charset "utf-8";
 /*
  * CSS RESET
+ * 不考虑IE6/7
  * @author mizi
  * @version 1.0.20080317
  * @version 1.1.20080516 去除 * 暴力
@@ -67,7 +68,7 @@ del { text-decoration:line-through; }
  */
 code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace, "\5b8b\4f53", sans-serif; }
 
-small { font-size: 11px; -webkit-transform: scale(0.91); -o-transform: scale(1); } /** 汉字一般小于11px，在14寸屏上几乎不能看*/
+small { display: inline-block; font-size: 11px; -webkit-transform: scale(0.91); -o-transform: scale(0.91); } /** 汉字一般小于11px，在14寸屏上几乎不能看*/
 
 /*
  * 重设列表样式
@@ -77,7 +78,7 @@ ol, ul { list-style: none; }
 /*
  * 重设链接元素 a 样式
  */
-a { text-decoration: none; outline: none; }
+a { color: #333; text-decoration: none; outline: none; }
 a:hover{ text-decoration: underline; }
 
 /*

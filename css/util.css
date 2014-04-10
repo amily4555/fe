@@ -47,6 +47,12 @@
 .bbb { font-weight: 600; }
 .bold { font-weight: bold; }
 
+/*
+ * 鼠标手势
+ */
+.pointer { cursor: pointer; }
+.no-pointer { cursor: default; }
+
 /** 下划线 */
 .unln{ text-decoration: underline; }
 .unln-n {text-decoration: none; }
@@ -185,6 +191,17 @@
 .p10px { padding: 10px; }
 .p15px { padding: 15px; }
 
+/** 最小宽高度, 常用于 icon  */
+.wh16px { width: 16px; height: 16px; }
+.wh18px { width: 18px; height: 18px; }
+.wh20px { width: 20px; height: 20px; }
+.wh22px { width: 22px; height: 22px; }
+.wh24px { width: 24px; height: 24px; }
+.wh28px { width: 28px; height: 28px; }
+.wh30px { width: 30px; height: 30px; }
+.wh32px { width: 32px; height: 32px; }
+.wh40px { width: 40px; height: 40px; }
+
 /*
  * 常用样式类
  */
@@ -211,19 +228,19 @@ label.error { color: #f00;}
 	min-width: 50px;
 	min-height: 24px;
     line-height: 24px;
-    color: #000;
-    padding: 0;
-    border: 1px solid #ccc;  
-    background: #f0f0f0;
+    color: #fff;
+    padding: 0 8px;
+    border: 1px solid #039643;  
+    background: #00612a;
 	box-sizing: border-box; 
   	-webkit-box-sizing: border-box; 
 	-moz-box-sizing: border-box; 
 	-ms-box-sizing: border-box; 
 }
-a.btn {padding-left: 5px; padding-right: 5px; text-align: center; display: inline-block; vertical-align: top; }
+a.btn { text-align: center; display: inline-block; vertical-align: top; }
 a.btn:hover {text-decoration: none; }
-.btn:hover {background: #f5f5f5; }
-.btn[disabled] { color: #595757; background: #ccc; cursor: not-allowed; }
+.btn:hover {background: #039643; }
+.btn[disabled] { color: #595757; background: #ccc; border: 1px solid #ccc; cursor: not-allowed; }
 
 /** 遮罩mask */
 .mask {
@@ -239,10 +256,34 @@ a.btn:hover {text-decoration: none; }
 }
 
 /** 默认头像显示 */
-.avatar {
-	background: #f3f3f3 url("http://static.hunterdrive.com/base/images/avatar-default.png?1222") no-repeat center center;
+i.avatar {
+	background: #f3f3f3 url("http://static.hunterdrive.com/base/images/avatar-default.png") no-repeat center center;
 	background-size: cover;
 	background-repeat: round;
+}
+
+/** i 标签专用与 字符icon, icon, 头像显示 */ 
+i {
+	display: inline-block;
+	min-height: 16px;
+	min-width: 16px;
+	line-height: 16px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	box-sizing: border-box; 
+  	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	-ms-box-sizing: border-box; 
+}
+
+i.view { cursor: pointer; }
+i.cirle:hover {
+	color: #fff !important;
+	border-radius: 50%;
+	background: #007935;
+	border: 1px solid #e5e5e5;
 }
 
 /** 表单元素 input */
@@ -259,3 +300,8 @@ input[type=email] {
 	-ms-box-sizing: border-box; 
 }
 
+/** 隐藏 highchart 版权说明 */
+text[text-anchor='end'] tspan { display: none; }
+
+/** 标题 */
+dt.title { padding-left: 10px; min-height: 40px; line-height: 40px; font-size: 18px; }
